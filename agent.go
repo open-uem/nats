@@ -123,6 +123,7 @@ type AgentReport struct {
 	Release                     Release          `json:"release,omitempty"`
 	ExecutionTime               time.Time        `json:"execution_time,omitempty"`
 	IP                          string           `json:"ip,omitempty"`
+	WAN                         string           `json:"wan_ip,omitempty"`
 	MACAddress                  string           `json:"mac,omitempty"`
 	SFTPPort                    string           `json:"sftp_port,omitempty"`
 	VNCProxyPort                string           `json:"vnc_proxy_port,omitempty"`
