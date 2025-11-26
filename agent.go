@@ -21,11 +21,12 @@ type Antivirus struct {
 type OperatingSystem struct {
 	Version        string    `json:"version,omitempty"`
 	Description    string    `json:"description,omitempty"`
-	InstallDate    time.Time `json:"install_date,omitempty"`
+	InstallDate    time.Time `json:"install_date"`
 	Edition        string    `json:"edition,omitempty"`
 	Arch           string    `json:"arch,omitempty"`
 	Username       string    `json:"username,omitempty"`
-	LastBootUpTime time.Time `json:"last_bootup_time,omitempty"`
+	LastBootUpTime time.Time `json:"last_bootup_time"`
+	Domain         string    `json:"domain,omitempty"`
 }
 
 type LogicalDisk struct {
