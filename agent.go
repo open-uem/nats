@@ -97,6 +97,7 @@ type NetworkAdapter struct {
 	DHCPLeaseObtained time.Time `json:"dhcp_lease_obtained,omitempty"`
 	DHCPLeaseExpired  time.Time `json:"dhcp_lease_expired,omitempty"`
 	Speed             string    `json:"speed,omitempty"`
+	Virtual           bool      `json:"virtual,omitempty"`
 }
 
 type Application struct {
