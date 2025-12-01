@@ -80,8 +80,8 @@ type Share struct {
 
 type SystemUpdate struct {
 	Status         string    `json:"status,omitempty"`
-	LastInstall    time.Time `json:"last_install,omitempty"`
-	LastSearch     time.Time `json:"last_search,omitempty"`
+	LastInstall    time.Time `json:"last_install"`
+	LastSearch     time.Time `json:"last_search"`
 	PendingUpdates bool      `json:"pending_updates,omitempty"`
 }
 
@@ -94,8 +94,8 @@ type NetworkAdapter struct {
 	DNSServers        string    `json:"dns_servers,omitempty"`
 	DNSDomain         string    `json:"dns_domain,omitempty"`
 	DHCPEnabled       bool      `json:"dhcp_enabled,omitempty"`
-	DHCPLeaseObtained time.Time `json:"dhcp_lease_obtained,omitempty"`
-	DHCPLeaseExpired  time.Time `json:"dhcp_lease_expired,omitempty"`
+	DHCPLeaseObtained time.Time `json:"dhcp_lease_obtained"`
+	DHCPLeaseExpired  time.Time `json:"dhcp_lease_expired"`
 	Speed             string    `json:"speed,omitempty"`
 	Virtual           bool      `json:"virtual,omitempty"`
 }
@@ -109,13 +109,18 @@ type Application struct {
 
 type Update struct {
 	Title      string    `json:"title,omitempty"`
-	Date       time.Time `json:"date,omitempty"`
+	Date       time.Time `json:"date"`
 	SupportURL string    `json:"support_url,omitempty"`
 }
 
 type LoggedOnUser struct {
 	Name      string    `json:"name,omitempty"`
-	LastLogon time.Time `json:"last_logon,omitempty"`
+	LastLogon time.Time `json:"last_logon"`
+}
+
+type Netbird struct {
+	Version   string `json:"version,omitempty"`
+	Installed bool   `json:"installed,omitempty"`
 }
 
 type AgentReport struct {
@@ -159,6 +164,7 @@ type AgentReport struct {
 	HasRustDesk                 bool             `json:"has_rust_desk,omitempty"`
 	HasRustDeskService          bool             `json:"has_rust_desk_service,omitempty"`
 	IsFlatpakRustDesk           bool             `json:"is_flatpak_rust_desk,omitempty"`
+	Netbird                     Netbird          `json:"netbird"`
 }
 
 type Config struct {
