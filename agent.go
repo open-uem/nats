@@ -130,6 +130,7 @@ type Netbird struct {
 	PeersTotal          int    `json:"peers_total,omitempty"`
 	PeersConnected      int    `json:"peers_connected,omitempty"`
 	SSHEnabled          bool   `json:"ssh_enabled,omitempty"`
+	ServiceStatus       string `json:"service_status,omitempty"`
 }
 
 type AgentReport struct {
