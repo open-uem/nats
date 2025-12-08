@@ -119,18 +119,19 @@ type LoggedOnUser struct {
 }
 
 type Netbird struct {
-	Version             string `json:"version,omitempty"`
-	Installed           bool   `json:"installed,omitempty"`
-	IP                  string `json:"ip,omitempty"`
-	Profile             string `json:"profile,omitempty"`
-	ManagementURL       string `json:"management_url,omitempty"`
-	ManagementConnected bool   `json:"management_connected,omitempty"`
-	SignalURL           string `json:"signal_url,omitempty"`
-	SignalConnected     bool   `json:"signal_connected,omitempty"`
-	PeersTotal          int    `json:"peers_total,omitempty"`
-	PeersConnected      int    `json:"peers_connected,omitempty"`
-	SSHEnabled          bool   `json:"ssh_enabled,omitempty"`
-	ServiceStatus       string `json:"service_status,omitempty"`
+	Version             string   `json:"version,omitempty"`
+	Installed           bool     `json:"installed,omitempty"`
+	IP                  string   `json:"ip,omitempty"`
+	Profile             string   `json:"profile,omitempty"`
+	ManagementURL       string   `json:"management_url,omitempty"`
+	ManagementConnected bool     `json:"management_connected,omitempty"`
+	SignalURL           string   `json:"signal_url,omitempty"`
+	SignalConnected     bool     `json:"signal_connected,omitempty"`
+	PeersTotal          int      `json:"peers_total,omitempty"`
+	PeersConnected      int      `json:"peers_connected,omitempty"`
+	SSHEnabled          bool     `json:"ssh_enabled,omitempty"`
+	ServiceStatus       string   `json:"service_status,omitempty"`
+	Profiles            []string `json:"profiles,omitempty"`
 }
 
 type AgentReport struct {
