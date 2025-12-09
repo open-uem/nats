@@ -140,6 +140,10 @@ type NetbirdRegister struct {
 	ManagementURL string `json:"management_url,omitempty"`
 }
 
+type NetbirdSwitchProfile struct {
+	Profile string `json:"profile,omitempty"`
+}
+
 type AgentReport struct {
 	AgentID                     string           `json:"id,omitempty"`
 	OS                          string           `json:"os,omitempty"`
