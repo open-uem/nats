@@ -135,6 +135,11 @@ type Netbird struct {
 	DNSServers          []string `json:"dns_servers,omitempty"`
 }
 
+type NetbirdRegister struct {
+	OneOffKey     string `json:"key,omitempty"`
+	ManagementURL string `json:"management_url,omitempty"`
+}
+
 type AgentReport struct {
 	AgentID                     string           `json:"id,omitempty"`
 	OS                          string           `json:"os,omitempty"`
