@@ -133,6 +133,7 @@ type Netbird struct {
 	ServiceStatus       string   `json:"service_status,omitempty"`
 	Profiles            []string `json:"profiles,omitempty"`
 	DNSServers          []string `json:"dns_servers,omitempty"`
+	Error               string   `json:"error,omitempty"`
 }
 
 type NetbirdRegister struct {
