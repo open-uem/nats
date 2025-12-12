@@ -136,6 +136,12 @@ type Netbird struct {
 	Error               string   `json:"error,omitempty"`
 }
 
+type NetBirdGroups struct {
+	ID         string `json:"id"`
+	Name       string `json:"name"`
+	PeersCount int    `json:"peers_count"`
+}
+
 type NetbirdRegister struct {
 	OneOffKey     string `json:"key,omitempty"`
 	ManagementURL string `json:"management_url,omitempty"`
