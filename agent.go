@@ -152,6 +152,7 @@ type NetbirdSwitchProfile struct {
 }
 
 type NetbirdTask struct {
+	ID           string          `json:"id"`
 	Install      bool            `json:"install,omitempty"`
 	Uninstall    bool            `json:"uinstall,omitempty"`
 	Register     bool            `json:"register,omitempty"`
