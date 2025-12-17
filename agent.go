@@ -248,13 +248,15 @@ type RemoteConfigRequest struct {
 }
 
 type RustDesk struct {
-	CustomRendezVousServer string `json:"customRendezVousServer,omitempty"`
-	RelayServer            string `json:"relayServer,omitempty"`
-	APIServer              string `json:"apiServer,omitempty"`
-	Key                    string `json:"key,omitempty"`
-	PermanentPassword      string `json:"permanentPassword,omitempty"`
-	Whitelist              string `json:"whitelist,omitempty"`
-	DirectIPAccess         bool   `json:"directIPAccess,omitempty"`
+	CustomRendezVousServer  string `json:"customRendezVousServer,omitempty"`
+	RelayServer             string `json:"relayServer,omitempty"`
+	APIServer               string `json:"apiServer,omitempty"`
+	Key                     string `json:"key,omitempty"`
+	PermanentPassword       string `json:"permanentPassword,omitempty"`
+	Whitelist               string `json:"whitelist,omitempty"`
+	DirectIPAccess          bool   `json:"directIPAccess,omitempty"`
+	VerificationMethod      string `json:"verificationMethod,omitempty"`
+	TemporaryPasswordLength int    `json:"temporaryPasswordLength,omitempty"`
 }
 
 type RustDeskResult struct {
