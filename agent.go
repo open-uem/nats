@@ -142,13 +142,10 @@ type NetBirdGroups struct {
 	PeersCount int    `json:"peers_count"`
 }
 
-type NetbirdRegister struct {
+type NetbirdSettings struct {
 	OneOffKey     string `json:"key,omitempty"`
 	ManagementURL string `json:"management_url,omitempty"`
-}
-
-type NetbirdSwitchProfile struct {
-	Profile string `json:"profile,omitempty"`
+	Profile       string `json:"profile,omitempty"`
 }
 
 type NetbirdTask struct {
@@ -156,7 +153,7 @@ type NetbirdTask struct {
 	Install      bool            `json:"install,omitempty"`
 	Uninstall    bool            `json:"uinstall,omitempty"`
 	Register     bool            `json:"register,omitempty"`
-	RegisterInfo NetbirdRegister `json:"register_info,omitempty"`
+	RegisterInfo NetbirdSettings `json:"register_info,omitempty"`
 }
 
 type AgentReport struct {
