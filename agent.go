@@ -2,6 +2,16 @@ package nats
 
 import "time"
 
+const (
+	DRIVE_TYPE_UNKNOWN = iota
+	DRIVE_TYPE_NO_ROOT_DIRECTORY
+	DRIVE_TYPE_REMOVABLE_DISK
+	DRIVE_TYPE_LOCAL_DISK
+	DRIVE_TYPE_NETWORK_DRIVE
+	DRIVE_TYPE_COMPACT_DISC
+	DRIVE_TYPE_RAM_DISK
+)
+
 type Computer struct {
 	Manufacturer   string `json:"manufacturer,omitempty"`
 	Model          string `json:"model,omitempty"`
@@ -37,6 +47,7 @@ type LogicalDisk struct {
 	RemainingSpaceInUnits string `json:"remaining_space_in_units,omitempty"`
 	VolumeName            string `json:"volume_name,omitempty"`
 	BitLockerStatus       string `json:"bitlocker_status,omitempty"`
+	DriveType             string `json:"drive_type,omitempty"`
 }
 
 type PhysicalDisk struct {
