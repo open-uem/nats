@@ -43,7 +43,7 @@ type LogicalDisk struct {
 	RemainingSpaceInUnits string `json:"remaining_space_in_units,omitempty"`
 	VolumeName            string `json:"volume_name,omitempty"`
 	BitLockerStatus       string `json:"bitlocker_status,omitempty"`
-	VolumeType            string `json:"volume_type,omitempty"`
+	VolumeType            uint32 `json:"volume_type,omitempty"`
 }
 
 type PhysicalDisk struct {
