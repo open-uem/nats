@@ -36,14 +36,17 @@ type OperatingSystem struct {
 }
 
 type LogicalDisk struct {
-	Label                 string `json:"label,omitempty"`
-	Usage                 int8   `json:"usage,omitempty"`
-	Filesystem            string `json:"filesystem,omitempty"`
-	SizeInUnits           string `json:"size_in_units,omitempty"`
-	RemainingSpaceInUnits string `json:"remaining_space_in_units,omitempty"`
-	VolumeName            string `json:"volume_name,omitempty"`
-	BitLockerStatus       string `json:"bitlocker_status,omitempty"`
-	VolumeType            uint32 `json:"volume_type,omitempty"`
+	Label                         string `json:"label,omitempty"`
+	Usage                         int8   `json:"usage,omitempty"`
+	Filesystem                    string `json:"filesystem,omitempty"`
+	SizeInUnits                   string `json:"size_in_units,omitempty"`
+	RemainingSpaceInUnits         string `json:"remaining_space_in_units,omitempty"`
+	VolumeName                    string `json:"volume_name,omitempty"`
+	BitLockerStatus               string `json:"bitlocker_status,omitempty"`
+	VolumeType                    uint32 `json:"volume_type,omitempty"`
+	BitLockerConversionStatus     int32  `json:"bitlocker_conversion_status,omitempty"`
+	BitLockerEncryptionPercentage int32  `json:"bitlocker_encryption_percentage,omitempty"`
+	BitLockerRecoveryKey          string `json:"bitlocker_recovery_key,omitempty"`
 }
 
 type PhysicalDisk struct {
