@@ -270,3 +270,13 @@ type RustDeskResult struct {
 	Error      string `json:"error"`
 	RustDeskID string `json:"id"`
 }
+
+type BitLockerOp struct {
+	Operation            string `json:"operation,omitempty"`
+	Volume               string `json:"volume,omitempty"`
+	Status               string `json:"status,omitempty"`
+	ConversionStatus     int32  `json:"conversion_status,omitempty"`
+	EncryptionPercentage int32  `json:"encryption_percentage,omitempty"`
+	RecoveryKey          string `json:"recovery_key,omitempty"`
+	Error                string `json:"error,omitempty"`
+}
