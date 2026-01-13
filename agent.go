@@ -274,7 +274,7 @@ type RustDeskResult struct {
 type BitLockerOp struct {
 	Operation            string `json:"operation,omitempty"`
 	Volume               string `json:"volume,omitempty"`
-	Volume_Type          string `json:"volume_type,omitempty"`
+	VolumeType           string `json:"volume_type,omitempty"`
 	Status               string `json:"status,omitempty"`
 	ConversionStatus     int32  `json:"conversion_status,omitempty"`
 	EncryptionPercentage int32  `json:"encryption_percentage,omitempty"`
