@@ -272,6 +272,7 @@ type RustDeskResult struct {
 }
 
 type BitLockerOp struct {
+	AgentID              string `json:"agentID,omitempty"`
 	Operation            string `json:"operation,omitempty"`
 	Volume               string `json:"volume,omitempty"`
 	VolumeType           uint32 `json:"volume_type,omitempty"`
