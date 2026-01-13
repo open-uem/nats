@@ -281,4 +281,5 @@ type BitLockerOp struct {
 	EncryptionPercentage int32  `json:"encryption_percentage,omitempty"`
 	RecoveryKey          string `json:"recovery_key,omitempty"`
 	Error                string `json:"error,omitempty"`
+	Passphrase           string `json:"passphrase,omitempty"`
 }
