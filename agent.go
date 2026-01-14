@@ -61,6 +61,8 @@ type LogicalDisk struct {
 	BitLockerConversionStatus     int32  `json:"bitlocker_conversion_status,omitempty"`
 	BitLockerEncryptionPercentage int32  `json:"bitlocker_encryption_percentage,omitempty"`
 	BitLockerRecoveryKey          string `json:"bitlocker_recovery_key,omitempty"`
+	BitLockerIsAutoUnlockEnabled  bool   `json:"bitlocker_is_auto_unlock_enabled,omitempty"`
+	BitLockerVolumeKeyProtectorID string `json:"bitlocker_volume_key_protector_id,omitempty"`
 }
 
 type PhysicalDisk struct {
