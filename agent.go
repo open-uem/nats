@@ -63,6 +63,7 @@ type LogicalDisk struct {
 	BitLockerRecoveryKey                     string `json:"bitlocker_recovery_key,omitempty"`
 	BitLockerIsAutoUnlockEnabled             bool   `json:"bitlocker_is_auto_unlock_enabled,omitempty"`
 	BitLockerExternalKeyVolumeKeyProtectorID string `json:"bitlocker_external_key_volume_key_protector_id,omitempty"`
+	BitLockerKeyProtectorsTypes              string `json:"bitlocker_key_protectors_types,omitempty"`
 }
 
 type PhysicalDisk struct {
@@ -301,4 +302,5 @@ type BitLockerOp struct {
 	ProtectionType                  string `json:"protection_type,omitempty"`
 	IsAutoUnlockEnabled             bool   `json:"is_auto_unlock_enabled,omitempty"`
 	ExternalKeyVolumeKeyProtectorID string `json:"external_key_volume_key_protector_id,omitempty"`
+	KeyProtectorsTypes              string `json:"key_protectors_types,omitempty"`
 }
