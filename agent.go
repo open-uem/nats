@@ -8,6 +8,20 @@ const (
 	VOLUME_TYPE_REMOVABLE
 )
 
+const (
+	BitLockerFullyDecrypted = iota
+	BitLockerFullyEncrypted
+	BitLockerEncryptionInProgress
+	BitLockerDecryptionInProgress
+	BitLockerEncryptionPaused
+	BitLockerDecryptionPaused
+)
+
+const (
+	BitLockerProtectWithTPM        = "TPM"
+	BitLockerProtectWithPassphrase = "Passphrase"
+)
+
 type Computer struct {
 	Manufacturer   string `json:"manufacturer,omitempty"`
 	Model          string `json:"model,omitempty"`
