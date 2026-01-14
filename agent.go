@@ -297,4 +297,6 @@ type BitLockerOp struct {
 	Error                string `json:"error,omitempty"`
 	Passphrase           string `json:"passphrase,omitempty"`
 	ProtectionType       string `json:"protection_type,omitempty"`
+	IsAutoUnlockEnabled  bool   `json:"is_auto_unlock_enabled,omitempty"`
+	VolumeKeyProtectorID string `json:"volume_key_protector_id,omitempty"`
 }
