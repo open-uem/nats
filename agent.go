@@ -9,6 +9,12 @@ const (
 )
 
 const (
+	BitLockerProtectionOff = iota
+	BitLockerProtectionOn
+	BitLockerProtectionUnknown
+)
+
+const (
 	BitLockerFullyDecrypted = iota
 	BitLockerFullyEncrypted
 	BitLockerEncryptionInProgress
