@@ -304,4 +304,5 @@ type BitLockerOp struct {
 	IsAutoUnlockEnabled             bool   `json:"is_auto_unlock_enabled,omitempty"`
 	ExternalKeyVolumeKeyProtectorID string `json:"external_key_volume_key_protector_id,omitempty"`
 	KeyProtectorsTypes              string `json:"key_protectors_types,omitempty"`
+	PassphraseVolumeKeyProtectorID  string `json:"passphrase_volume_key_protector_id,omitempty"`
 }
