@@ -18,15 +18,15 @@ const (
 )
 
 const (
-	BitLockerProtectWithTPM        = "TPM"
-	BitLockerProtectWithPassphrase = "Passphrase"
-	BitLockerEncryptAction         = "encrypt"
-	BitLockerDecryptAction         = "decrypt"
-	BitLockerResumeAction          = "resume"
-	BitLockerSuspendAction         = "suspend"
-	BitLockerEnableAutoUnlock      = "enableautounlock"
-	BitLockerDisableAutoUnlock     = "disableautounlock"
-	BitLockerChangePassphrase      = "changepassphrase"
+	BitLockerProtectWithTPM          = "TPM"
+	BitLockerProtectWithPassphrase   = "Passphrase"
+	BitLockerEncryptAction           = "encrypt"
+	BitLockerDecryptAction           = "decrypt"
+	BitLockerResumeAction            = "resume"
+	BitLockerSuspendAction           = "suspend"
+	BitLockerEnableAutoUnlockAction  = "enableautounlock"
+	BitLockerDisableAutoUnlockAction = "disableautounlock"
+	BitLockerChangePassphraseAction  = "changepassphrase"
 )
 
 type Computer struct {
