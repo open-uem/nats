@@ -27,6 +27,7 @@ const (
 	BitLockerEnableAutoUnlockAction  = "enableautounlock"
 	BitLockerDisableAutoUnlockAction = "disableautounlock"
 	BitLockerChangePassphraseAction  = "changepassphrase"
+	BitLockerInfoAction              = "info"
 )
 
 type Computer struct {
