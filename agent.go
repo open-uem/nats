@@ -43,6 +43,20 @@ const (
 	BitLockerAddPassphrase           = "addpassphrase"
 )
 
+const (
+	BitLockerProtectorUnknown = iota
+	BitLockerProtectorTPM
+	BitLockerProtectorExternalKey
+	BitLockerProtectorNumericalPassword
+	BitLockerProtectorTPMAndPIN
+	BitLockerProtectorTPMAndStartupKey
+	BitLockerProtectorTPMAndPINAndStartupKey
+	BitLockerProtectorTPMPublicKey
+	BitLockerProtectorTPMPassphrase
+	BitLockerProtectorTPMTPMCertificate
+	BitLockerProtectorTPMCryptoAPINextGeneration
+)
+
 type Computer struct {
 	Manufacturer   string `json:"manufacturer,omitempty"`
 	Model          string `json:"model,omitempty"`
