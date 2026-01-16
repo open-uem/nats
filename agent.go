@@ -29,18 +29,19 @@ const (
 )
 
 const (
-	BitLockerProtectWithTPM          = "TPM"
-	BitLockerProtectWithPassphrase   = "Passphrase"
-	BitLockerEncryptAction           = "encrypt"
-	BitLockerDecryptAction           = "decrypt"
-	BitLockerResumeAction            = "resume"
-	BitLockerSuspendAction           = "suspend"
-	BitLockerEnableAutoUnlockAction  = "enableautounlock"
-	BitLockerDisableAutoUnlockAction = "disableautounlock"
-	BitLockerChangePassphraseAction  = "changepassphrase"
-	BitLockerInfoAction              = "info"
-	BitLockerUnlockWithPassphrase    = "unlockwithpassphrase"
-	BitLockerAddPassphrase           = "addpassphrase"
+	BitLockerProtectWithTPM             = "TPM"
+	BitLockerProtectWithPassphrase      = "Passphrase"
+	BitLockerEncryptAction              = "encrypt"
+	BitLockerDecryptAction              = "decrypt"
+	BitLockerResumeAction               = "resume"
+	BitLockerSuspendAction              = "suspend"
+	BitLockerEnableAutoUnlockAction     = "enableautounlock"
+	BitLockerDisableAutoUnlockAction    = "disableautounlock"
+	BitLockerChangePassphraseAction     = "changepassphrase"
+	BitLockerInfoAction                 = "info"
+	BitLockerUnlockWithPassphraseAction = "unlockwithpassphrase"
+	BitLockerAddPassphraseAction        = "addpassphrase"
+	BitLockerDeletePassphraseAction     = "deletepassphrase"
 )
 
 const (
