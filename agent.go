@@ -40,6 +40,7 @@ const (
 	BitLockerChangePassphraseAction  = "changepassphrase"
 	BitLockerInfoAction              = "info"
 	BitLockerUnlockWithPassphrase    = "unlockwithpassphrase"
+	BitLockerAddPassphrase           = "addpassphrase"
 )
 
 type Computer struct {
