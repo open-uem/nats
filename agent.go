@@ -51,10 +51,10 @@ const (
 	BitLockerProtectorTPMAndPIN
 	BitLockerProtectorTPMAndStartupKey
 	BitLockerProtectorTPMAndPINAndStartupKey
-	BitLockerProtectorTPMPublicKey
-	BitLockerProtectorTPMPassphrase
-	BitLockerProtectorTPMTPMCertificate
-	BitLockerProtectorTPMCryptoAPINextGeneration
+	BitLockerProtectorPublicKey
+	BitLockerProtectorPassphrase
+	BitLockerProtectorTPMCertificate
+	BitLockerProtectorCryptoAPINextGeneration
 )
 
 type Computer struct {
