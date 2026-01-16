@@ -70,21 +70,23 @@ type OperatingSystem struct {
 }
 
 type LogicalDisk struct {
-	Label                                    string `json:"label,omitempty"`
-	Usage                                    int8   `json:"usage,omitempty"`
-	Filesystem                               string `json:"filesystem,omitempty"`
-	SizeInUnits                              string `json:"size_in_units,omitempty"`
-	RemainingSpaceInUnits                    string `json:"remaining_space_in_units,omitempty"`
-	VolumeName                               string `json:"volume_name,omitempty"`
-	BitLockerStatus                          string `json:"bitlocker_status,omitempty"`
-	VolumeType                               uint32 `json:"volume_type,omitempty"`
-	BitLockerConversionStatus                int32  `json:"bitlocker_conversion_status,omitempty"`
-	BitLockerEncryptionPercentage            int32  `json:"bitlocker_encryption_percentage,omitempty"`
-	BitLockerRecoveryKey                     string `json:"bitlocker_recovery_key,omitempty"`
-	BitLockerIsAutoUnlockEnabled             bool   `json:"bitlocker_is_auto_unlock_enabled,omitempty"`
-	BitLockerExternalKeyVolumeKeyProtectorID string `json:"bitlocker_external_key_volume_key_protector_id,omitempty"`
-	BitLockerKeyProtectorsTypes              string `json:"bitlocker_key_protectors_types,omitempty"`
-	BitLockerPassphraseVolumeKeyProtectorID  string `json:"bitlocker_passphrase_volume_key_protector_id,omitempty"`
+	Label                                        string `json:"label,omitempty"`
+	Usage                                        int8   `json:"usage,omitempty"`
+	Filesystem                                   string `json:"filesystem,omitempty"`
+	SizeInUnits                                  string `json:"size_in_units,omitempty"`
+	RemainingSpaceInUnits                        string `json:"remaining_space_in_units,omitempty"`
+	VolumeName                                   string `json:"volume_name,omitempty"`
+	BitLockerStatus                              string `json:"bitlocker_status,omitempty"`
+	VolumeType                                   uint32 `json:"volume_type,omitempty"`
+	BitLockerConversionStatus                    int32  `json:"bitlocker_conversion_status,omitempty"`
+	BitLockerEncryptionPercentage                int32  `json:"bitlocker_encryption_percentage,omitempty"`
+	BitLockerRecoveryKey                         string `json:"bitlocker_recovery_key,omitempty"`
+	BitLockerIsAutoUnlockEnabled                 bool   `json:"bitlocker_is_auto_unlock_enabled,omitempty"`
+	BitLockerExternalKeyVolumeKeyProtectorID     string `json:"bitlocker_external_key_volume_key_protector_id,omitempty"`
+	BitLockerKeyProtectorsTypes                  string `json:"bitlocker_key_protectors_types,omitempty"`
+	BitLockerPassphraseVolumeKeyProtectorID      string `json:"bitlocker_passphrase_volume_key_protector_id,omitempty"`
+	BitLockerTPMVolumeKeyProtectorID             string `json:"bitlocker_tpm_volume_key_protector_id,omitempty"`
+	BitLockerNumericPasswordVolumeKeyProtectorID string `json:"bitlocker_numeric_password_volume_key_protector_id,omitempty"`
 }
 
 type PhysicalDisk struct {
@@ -310,19 +312,21 @@ type RustDeskResult struct {
 }
 
 type BitLockerOp struct {
-	AgentID                         string `json:"agentID,omitempty"`
-	Operation                       string `json:"operation,omitempty"`
-	Volume                          string `json:"volume,omitempty"`
-	VolumeType                      uint32 `json:"volume_type,omitempty"`
-	Status                          string `json:"status,omitempty"`
-	ConversionStatus                int32  `json:"conversion_status,omitempty"`
-	EncryptionPercentage            int32  `json:"encryption_percentage,omitempty"`
-	RecoveryKey                     string `json:"recovery_key,omitempty"`
-	Error                           string `json:"error,omitempty"`
-	Passphrase                      string `json:"passphrase,omitempty"`
-	ProtectionType                  string `json:"protection_type,omitempty"`
-	IsAutoUnlockEnabled             bool   `json:"is_auto_unlock_enabled,omitempty"`
-	ExternalKeyVolumeKeyProtectorID string `json:"external_key_volume_key_protector_id,omitempty"`
-	KeyProtectorsTypes              string `json:"key_protectors_types,omitempty"`
-	PassphraseVolumeKeyProtectorID  string `json:"passphrase_volume_key_protector_id,omitempty"`
+	AgentID                             string `json:"agentID,omitempty"`
+	Operation                           string `json:"operation,omitempty"`
+	Volume                              string `json:"volume,omitempty"`
+	VolumeType                          uint32 `json:"volume_type,omitempty"`
+	Status                              string `json:"status,omitempty"`
+	ConversionStatus                    int32  `json:"conversion_status,omitempty"`
+	EncryptionPercentage                int32  `json:"encryption_percentage,omitempty"`
+	RecoveryKey                         string `json:"recovery_key,omitempty"`
+	Error                               string `json:"error,omitempty"`
+	Passphrase                          string `json:"passphrase,omitempty"`
+	ProtectionType                      string `json:"protection_type,omitempty"`
+	IsAutoUnlockEnabled                 bool   `json:"is_auto_unlock_enabled,omitempty"`
+	ExternalKeyVolumeKeyProtectorID     string `json:"external_key_volume_key_protector_id,omitempty"`
+	KeyProtectorsTypes                  string `json:"key_protectors_types,omitempty"`
+	PassphraseVolumeKeyProtectorID      string `json:"passphrase_volume_key_protector_id,omitempty"`
+	TPMVolumeKeyProtectorID             string `json:"tpm_volume_key_protector_id,omitempty"`
+	NumericPasswordVolumeKeyProtectorID string `json:"numeric_password_volume_key_protector_id,omitempty"`
 }
