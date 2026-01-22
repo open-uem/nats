@@ -11,13 +11,6 @@ type SoftwarePackage struct {
 	Source string `json:"source,omitempty"`
 }
 
-type WingetCfgReport struct {
-	ProfileID int    `json:"profileID,omitempty"`
-	AgentID   string `json:"agentID,omitempty"`
-	Success   bool   `json:"success,omitempty"`
-	Error     string `json:"error,omitempty"`
-}
-
 // WingetCfgDeploy allows the agent to inform if a package
 // has been installed or desinstalled using Winget configure
 type WingetCfgDeploy struct {
