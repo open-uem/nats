@@ -15,66 +15,66 @@ type OSUpdateSettingsType struct {
 }
 
 type NanoMDMDeviceInfoResponse struct {
-	ActiveManagedUsers               []string             `plist:"ActiveManagedUsers" json:"activeManagedUsers"`
-	AutoSetupAdminAccounts           []string             `plist:"AutoSetupAdminAccounts" json:"autoSetupAdminAccounts"`
-	AvailableDeviceCapacity          float64              `plist:"AvailableDeviceCapacity" json:"availableDeviceCapacity"`
-	AwaitingConfiguration            bool                 `plist:"AwaitingConfiguration" json:"awaitingConfiguration"`
-	BatteryLevel                     float64              `plist:"BatteryLevel" json:"batteryLevel"`
-	BluetoothMAC                     string               `plist:"BluetoothMAC" json:"bluetoothMAC"`
-	BuildVersion                     string               `plist:"BuildVersion" json:"buildVersion"`
-	CurrentConsoleManagedUser        string               `plist:"CurrentConsoleManagedUser" json:"currentConsoleManagedUser"`
-	DeviceCapacity                   float64              `plist:"DeviceCapacity" json:"deviceCapacity"`
-	DeviceName                       string               `plist:"DeviceName" json:"deviceName"`
-	EACSPreflight                    string               `plist:"EACSPreflight" json:"eacsPreflight"`
-	EthernetMAC                      string               `plist:"EthernetMAC" json:"ethernetMAC"`
-	HasBattery                       bool                 `plist:"HasBattery" json:"hasBattery"`
-	HostName                         string               `plist:"HostName" json:"hostname"`
-	IsActivationLockEnabled          bool                 `plist:"IsActivationLockEnabled" json:"isActivationLockEnabled"`
-	IsActivationLockSupported        bool                 `plist:"IsActivationLockSupported" json:"isActivationLockSupported"`
-	IsAppleSilicon                   bool                 `plist:"IsAppleSilicon" json:"isAppleSilicon"`
-	IsSupervised                     bool                 `plist:"IsSupervised" json:"isSupervised"`
-	LocalHostName                    string               `plist:"LocalHostName" json:"localhostname"`
-	Model                            string               `plist:"Model" json:"model"`
-	ModelName                        string               `plist:"ModelName" json:"modelName"`
-	OSUpdateSettings                 OSUpdateSettingsType `plist:"OSUpdateSettings" json:"osUpdateSettings"`
-	OSVersion                        string               `plist:"OSVersion" json:"osVersion"`
+	ActiveManagedUsers               []string             `plist:"ActiveManagedUsers"`
+	AutoSetupAdminAccounts           []string             `plist:"AutoSetupAdminAccounts"`
+	AvailableDeviceCapacity          float64              `plist:"AvailableDeviceCapacity"`
+	AwaitingConfiguration            bool                 `plist:"AwaitingConfiguration"`
+	BatteryLevel                     float64              `plist:"BatteryLevel"`
+	BluetoothMAC                     string               `plist:"BluetoothMAC"`
+	BuildVersion                     string               `plist:"BuildVersion"`
+	CurrentConsoleManagedUser        string               `plist:"CurrentConsoleManagedUser"`
+	DeviceCapacity                   float64              `plist:"DeviceCapacity"`
+	DeviceName                       string               `plist:"DeviceName"`
+	EACSPreflight                    string               `plist:"EACSPreflight"`
+	EthernetMAC                      string               `plist:"EthernetMAC"`
+	HasBattery                       bool                 `plist:"HasBattery"`
+	HostName                         string               `plist:"HostName"`
+	IsActivationLockEnabled          bool                 `plist:"IsActivationLockEnabled"`
+	IsActivationLockSupported        bool                 `plist:"IsActivationLockSupported"`
+	IsAppleSilicon                   bool                 `plist:"IsAppleSilicon"`
+	IsSupervised                     bool                 `plist:"IsSupervised"`
+	LocalHostName                    string               `plist:"LocalHostName"`
+	Model                            string               `plist:"Model"`
+	ModelName                        string               `plist:"ModelName"`
+	OSUpdateSettings                 OSUpdateSettingsType `plist:"OSUpdateSettings"`
+	OSVersion                        string               `plist:"OSVersion"`
 	OSXSoftwareUpdateStatus          OSUpdateSettingsType `plist:"OSXSoftwareUpdateStatus"`
-	PINRequiredForDeviceLock         bool                 `plist:"PINRequiredForDeviceLock" json:"pinRequiredForDeviceLock"`
-	PINRequiredForEraseDevice        bool                 `plist:"PINRequiredForEraseDevice" json:"pinRequiredForEraseDevice"`
-	ProductName                      string               `plist:"ProductName" json:"productName"`
-	ProvisioningUDID                 string               `plist:"ProvisioningUDID" json:"provisioningUDID"`
-	SerialNumber                     string               `plist:"SerialNumber" json:"serialNumber"`
-	SoftwareUpdateDeviceID           string               `plist:"SoftwareUpdateDeviceID" json:"softwareUpdateDeviceID"`
-	SupplementalBuildVersion         string               `plist:"SupplementalBuildVersion" json:"supplementalBuildVersion"`
-	SupportsLOMDevice                bool                 `plist:"SupportsLOMDevice" json:"supportsLOMDevice"`
-	SupportsiOSAppInstalls           bool                 `plist:"SupportsiOSAppInstalls" json:"supportsiOSAppInstalls"`
-	SystemIntegrityProtectionEnabled bool                 `plist:"SystemIntegrityProtectionEnabled" json:"systemIntegrityProtectionEnabled"`
-	Status                           string               `plist:"Status" json:"status"`
-	UDID                             string               `plist:"UDID" json:"udid"`
-	WifiMAC                          string               `plist:"WiFiMAC" json:"wifiMAC"`
+	PINRequiredForDeviceLock         bool                 `plist:"PINRequiredForDeviceLock"`
+	PINRequiredForEraseDevice        bool                 `plist:"PINRequiredForEraseDevice"`
+	ProductName                      string               `plist:"ProductName"`
+	ProvisioningUDID                 string               `plist:"ProvisioningUDID"`
+	SerialNumber                     string               `plist:"SerialNumber"`
+	SoftwareUpdateDeviceID           string               `plist:"SoftwareUpdateDeviceID"`
+	SupplementalBuildVersion         string               `plist:"SupplementalBuildVersion"`
+	SupportsLOMDevice                bool                 `plist:"SupportsLOMDevice"`
+	SupportsiOSAppInstalls           bool                 `plist:"SupportsiOSAppInstalls"`
+	SystemIntegrityProtectionEnabled bool                 `plist:"SystemIntegrityProtectionEnabled"`
+	Status                           string               `plist:"Status"`
+	UDID                             string               `plist:"UDID"`
+	WifiMAC                          string               `plist:"WiFiMAC"`
 }
 
 type DeviceInformationResponse struct {
-	CommandUUID    string                    `plist:"CommandUUID" json:"commandUUID"`
-	QueryResponses NanoMDMDeviceInfoResponse `plist:"QueryResponses" json:"queryResponses"`
+	CommandUUID    string                    `plist:"CommandUUID"`
+	QueryResponses NanoMDMDeviceInfoResponse `plist:"QueryResponses"`
 }
 
 type NanoMDMUser struct {
-	DataQuota      int    `plist:"DataQuota" json:"dataQuota"`
-	DataUsed       int    `plist:"DataUsed" json:"dataUsed"`
-	HasDataToSync  bool   `plist:"HasDataToSync" json:"hasDataToSync"`
-	HasSecureToken bool   `plist:"HasSecureToken" json:"hasSecureToken"`
-	IsLoggedIn     bool   `plist:"IsLoggedIn" json:"isLoggedIn"`
-	UserName       string `plist:"UserName" json:"username"`
-	FullName       string `plist:"FullName" json:"fullName"`
-	MobileAccount  bool   `plist:"MobileAccount" json:"mobileAccount"`
-	UID            int    `plist:"UID" json:"uid"`
-	UserGUID       int    `plist:"UserGUID" json:"userGUID"`
+	DataQuota      int    `plist:"DataQuota"`
+	DataUsed       int    `plist:"DataUsed"`
+	HasDataToSync  bool   `plist:"HasDataToSync"`
+	HasSecureToken bool   `plist:"HasSecureToken"`
+	IsLoggedIn     bool   `plist:"IsLoggedIn"`
+	UserName       string `plist:"UserName"`
+	FullName       string `plist:"FullName"`
+	MobileAccount  bool   `plist:"MobileAccount"`
+	UID            int    `plist:"UID"`
+	UserGUID       int    `plist:"UserGUID"`
 }
 
 type UserListResponse struct {
-	CommandUUID string        `plist:"CommandUUID" json:"commandUUID"`
-	Status      string        `plist:"Status" json:"status"`
-	UDID        string        `plist:"UDID" json:"udid"`
-	Users       []NanoMDMUser `plist:"Users" json:"users"`
+	CommandUUID string        `plist:"CommandUUID"`
+	Status      string        `plist:"Status"`
+	UDID        string        `plist:"UDID"`
+	Users       []NanoMDMUser `plist:"Users"`
 }
