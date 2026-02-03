@@ -54,6 +54,11 @@ type NanoMDMDeviceInfoResponse struct {
 	WifiMAC                          string               `plist:"WiFiMAC" json:"wifiMAC"`
 }
 
+type DeviceInformationResponse struct {
+	CommandUUID    string                    `plist:"CommandUUID" json:"commandUUID"`
+	QueryResponses NanoMDMDeviceInfoResponse `plist:"QueryResponses" json:"queryResponses"`
+}
+
 type NanoMDMUser struct {
 	DataQuota     int    `plist:"DataQuota" json:"dataQuota"`
 	DataUsed      int    `plist:"DataUsed" json:"dataUsed"`
