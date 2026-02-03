@@ -60,11 +60,16 @@ type DeviceInformationResponse struct {
 }
 
 type NanoMDMUser struct {
-	DataQuota     int    `plist:"DataQuota" json:"dataQuota"`
-	DataUsed      int    `plist:"DataUsed" json:"dataUsed"`
-	HasDataToSync bool   `plist:"HasDataToSync" json:"hasDataToSync"`
-	IsLoggedIn    bool   `plist:"IsLoggedIn" json:"isLoggedIn"`
-	Username      string `plist:"Username" json:"username"`
+	DataQuota      int    `plist:"DataQuota" json:"dataQuota"`
+	DataUsed       int    `plist:"DataUsed" json:"dataUsed"`
+	HasDataToSync  bool   `plist:"HasDataToSync" json:"hasDataToSync"`
+	HasSecureToken bool   `plist:"HasSecureToken" json:"hasSecureToken"`
+	IsLoggedIn     bool   `plist:"IsLoggedIn" json:"isLoggedIn"`
+	Username       string `plist:"Username" json:"username"`
+	FullName       string `plist:"FullName" json:"fullName"`
+	MobileAccount  bool   `plist:"MobileAccount" json:"mobileAccount"`
+	UID            int    `plist:"UID" json:"uid"`
+	UserGUID       int    `plist:"UserGUID" json:"userGUID"`
 }
 
 type UserListResponse struct {
