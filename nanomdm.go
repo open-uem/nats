@@ -65,7 +65,7 @@ type NanoMDMUser struct {
 	HasDataToSync  bool   `plist:"HasDataToSync" json:"hasDataToSync"`
 	HasSecureToken bool   `plist:"HasSecureToken" json:"hasSecureToken"`
 	IsLoggedIn     bool   `plist:"IsLoggedIn" json:"isLoggedIn"`
-	Username       string `plist:"Username" json:"username"`
+	UserName       string `plist:"UserName" json:"username"`
 	FullName       string `plist:"FullName" json:"fullName"`
 	MobileAccount  bool   `plist:"MobileAccount" json:"mobileAccount"`
 	UID            int    `plist:"UID" json:"uid"`
