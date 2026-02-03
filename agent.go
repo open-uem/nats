@@ -239,9 +239,10 @@ type AgentSetting struct {
 }
 
 type RemoteConfigRequest struct {
-	AgentID  string `json:"agentID,omitempty"`
-	TenantID string `json:"tenantID,omitempty"`
-	SiteID   string `json:"siteID,omitempty"`
+	AgentID         string `json:"agentID,omitempty"`
+	TenantID        string `json:"tenantID,omitempty"`
+	SiteID          string `json:"siteID,omitempty"`
+	EnrollmentToken string `json:"enrollmentToken,omitempty"`
 }
 
 type RustDesk struct {
