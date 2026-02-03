@@ -78,3 +78,34 @@ type UserListResponse struct {
 	UDID        string        `plist:"UDID"`
 	Users       []NanoMDMUser `plist:"Users"`
 }
+
+type NanoMDMApplicationListItem struct {
+	AdHocCodeSigned           bool   `plist:"AdHocCodeSigned"`
+	AppStoreVendable          bool   `plist:"AppStoreVendable"`
+	BetaApp                   bool   `plist:"BetaApp"`
+	BundleSize                int    `plist:"BundleSize"`
+	DeviceBasedVPP            bool   `plist:"DeviceBasedVPP"`
+	DistributorIdentifier     string `plist:"DistributorIdentifier"`
+	DownloadCancelled         bool   `plist:"DownloadCancelled"`
+	DownloadFailed            bool   `plist:"DownloadFailed"`
+	DownloadPaused            bool   `plist:"DownloadPaused"`
+	DownloadWaiting           bool   `plist:"DownloadWaiting"`
+	DynamicSize               int    `plist:"DynamicSize"`
+	ExternalVersionIdentifier int    `plist:"ExternalVersionIdentifier"`
+	HasUpdateAvailable        bool   `plist:"HasUpdateAvailable"`
+	Identifier                string `plist:"Identifier"`
+	Installing                bool   `plist:"Installing"`
+	IsAppClip                 bool   `plist:"IsAppClip"`
+	IsValidated               bool   `plist:"IsValidated"`
+	Name                      string `plist:"Name"`
+	ShortVersion              string `plist:"ShortVersion"`
+	Source                    string `plist:"Source"`
+	Version                   string `plist:"Version"`
+}
+
+type InstalledApplicationList struct {
+	CommandUUID              string                       `plist:"CommandUUID"`
+	Status                   string                       `plist:"Status"`
+	UDID                     string                       `plist:"UDID"`
+	InstalledApplicationList []NanoMDMApplicationListItem `plist:"InstalledApplicationList"`
+}
