@@ -15,14 +15,14 @@ type OSUpdateSettingsType struct {
 }
 
 type NanoMDMDeviceInfoResponse struct {
-	// ActiveManagedUsers               []string             `plist:"ActiveManagedUsers"`
-	AutoSetupAdminAccounts  []string `plist:"AutoSetupAdminAccounts"`
-	AvailableDeviceCapacity float64  `plist:"AvailableDeviceCapacity"`
-	AwaitingConfiguration   bool     `plist:"AwaitingConfiguration"`
-	BatteryLevel            float64  `plist:"BatteryLevel"`
-	BluetoothMAC            string   `plist:"BluetoothMAC"`
-	BuildVersion            string   `plist:"BuildVersion"`
-	// CurrentConsoleManagedUser        string               `plist:"CurrentConsoleManagedUser"`
+	ActiveManagedUsers               []string             `plist:"ActiveManagedUsers"`
+	AutoSetupAdminAccounts           []string             `plist:"AutoSetupAdminAccounts"`
+	AvailableDeviceCapacity          float64              `plist:"AvailableDeviceCapacity"`
+	AwaitingConfiguration            bool                 `plist:"AwaitingConfiguration"`
+	BatteryLevel                     float64              `plist:"BatteryLevel"`
+	BluetoothMAC                     string               `plist:"BluetoothMAC"`
+	BuildVersion                     string               `plist:"BuildVersion"`
+	CurrentConsoleManagedUser        string               `plist:"CurrentConsoleManagedUser"`
 	DeviceCapacity                   float64              `plist:"DeviceCapacity"`
 	DeviceName                       string               `plist:"DeviceName"`
 	EACSPreflight                    string               `plist:"EACSPreflight"`
@@ -69,7 +69,7 @@ type NanoMDMUser struct {
 	FullName       string `plist:"FullName"`
 	MobileAccount  bool   `plist:"MobileAccount"`
 	UID            int    `plist:"UID"`
-	UserGUID       int    `plist:"UserGUID"`
+	UserGUID       string `plist:"UserGUID"`
 }
 
 type UserListResponse struct {
