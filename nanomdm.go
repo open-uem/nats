@@ -51,4 +51,20 @@ type NanoMDMDeviceInfoResponse struct {
 	SystemIntegrityProtectionEnabled bool                 `plist:"SystemIntegrityProtectionEnabled" json:"systemIntegrityProtectionEnabled"`
 	Status                           string               `plist:"Status" json:"status"`
 	UDID                             string               `plist:"UDID" json:"udid"`
+	WifiMAC                          string               `plist:"WiFiMAC" json:"wifiMAC"`
+}
+
+type NanoMDMUser struct {
+	DataQuota     int    `plist:"DataQuota" json:"dataQuota"`
+	DataUsed      int    `plist:"DataUsed" json:"dataUsed"`
+	HasDataToSync bool   `plist:"HasDataToSync" json:"hasDataToSync"`
+	IsLoggedIn    bool   `plist:"IsLoggedIn" json:"isLoggedIn"`
+	Username      string `plist:"Username" json:"username"`
+}
+
+type UserListResponse struct {
+	CommandUUID string        `plist:"CommandUUID" json:"commandUUID"`
+	Status      string        `plist:"Status" json:"status"`
+	UDID        string        `plist:"UDID" json:"udid"`
+	Users       []NanoMDMUser `plist:"Users" json:"users"`
 }
