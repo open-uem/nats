@@ -44,7 +44,7 @@ func ConnectWithNATS(servers, clientCert, clientKey, caCert string, websocketPor
 		webSocketServers := []string{}
 		for s := range strings.SplitSeq(servers, ",") {
 			server := strings.Split(s, ":")[0]
-			webSocketServers = append(webSocketServers, fmt.Sprintf("wss://%s:%s", server, port))
+			webSocketServers = append(webSocketServers, fmt.Sprintf("wss://%s:%d", server, port))
 		}
 
 		c, err = nats.Connect(
