@@ -6,7 +6,8 @@ import (
 )
 
 type CfgProfiles struct {
-	AgentID string `json:"agentID,omitempty"`
+	AgentID   string `json:"agentID,omitempty"`
+	ProfileID string `json:"profileID,omitempty"`
 }
 
 type ProfileConfig struct {
