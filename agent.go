@@ -236,6 +236,7 @@ type AgentSetting struct {
 	RemoteAssistance bool
 	SFTPPort         string
 	VNCProxyPort     string
+	WebSocketPort    string
 }
 
 type RemoteConfigRequest struct {
