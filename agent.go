@@ -113,6 +113,12 @@ type Update struct {
 	SupportURL string    `json:"support_url,omitempty"`
 }
 
+type PendingUpdate struct {
+	Title        string `json:"title,omitempty"`
+	KBArticleIDs string `json:"kb_article_ids,omitempty"`
+	IsDownloaded bool   `json:"is_downloaded,omitempty"`
+}
+
 type LoggedOnUser struct {
 	Name      string    `json:"name,omitempty"`
 	LastLogon time.Time `json:"last_logon"`
@@ -184,6 +190,7 @@ type AgentReport struct {
 	LoggedOnUsers               []LoggedOnUser   `json:"loggedonusers,omitempty"`
 	SupportedVNCServer          string           `json:"vnc,omitempty"`
 	Updates                     []Update         `json:"updates,omitempty"`
+	PendingUpdates              []PendingUpdate  `json:"pendingupdates,omitempty"`
 	LastUpdateTaskExecutionTime time.Time        `json:"last_update_task_execution_time"`
 	LastUpdateTaskStatus        string           `json:"last_update_task_status,omitempty"`
 	LastUpdateTaskResult        string           `json:"last_update_task_result,omitempty"`
